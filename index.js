@@ -3,7 +3,6 @@ const customRules = [
 	'./rules/es6',
 	'./rules/imports',
 	'./rules/possible-errors',
-	'./rules/react',
 	'./rules/stylistic-issues',
 	'./rules/variables'
 ].map(require.resolve);
