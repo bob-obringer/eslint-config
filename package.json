@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "ESLint Config for React with TypeScript and Prettier with opinionated rules",
   "main": "index.js",
-  "repository": "http://github.com/bobringer/eslint-config.git",
+  "repository": "http://github.com/bob-obringer/eslint-config.git",
   "author": "Bob Obringer <bob@obringer.net>",
   "license": "MIT",
   "dependencies": {
