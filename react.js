@@ -1,4 +1,21 @@
 module.exports = {
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        }
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+    plugins: [
+        'react',
+        'react-hooks'
+    ],
+    extends: [
+        'plugin:react/recommended',
+    ],
     rules: {
         "react/boolean-prop-naming": ["error", { "rule": "^(is|has|should)[A-Z]([A-Za-z0-9]?)+" }],
         "react/jsx-filename-extension": ["error", { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
@@ -10,7 +27,6 @@ module.exports = {
             "max": 3
         }],
         "react/jsx-no-literals": "error",
-		"react/no-bind": "error",
         "react/no-unsafe": "error",
         "react/prop-types": "error",
         "react/jsx-uses-react": "error",
