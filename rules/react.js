@@ -6,7 +6,9 @@ module.exports = {
         "react/jsx-indent": ["error", "tab"],
         "react/jsx-indent-props": ["error", "tab"],
         "react/jsx-key": "error",
-        "react/jsx-max-depth": ["error", 3],
+        "react/jsx-max-depth": ["error", {
+            "max": 3
+        }],
         "react/jsx-no-literals": "error",
 		"react/no-bind": "error",
         "react/no-unsafe": "error",
