@@ -1,6 +1,6 @@
 {
   "name": "@bob-obringer/eslint-config",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "ESLint Config for React with TypeScript and Prettier with opinionated rules",
   "main": "index.js",
   "repository": "http://github.com/bob-obringer/eslint-config.git",
@@ -8,28 +8,26 @@
   "license": "MIT",
   "dependencies": {
     "eslint-config-airbnb-typescript": "^8.0.2",
-    "eslint-config-prettier": "^6.11.0"
+    "eslint-config-prettier": "^6.11.0",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react-hooks": "^4.0.4"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",
     "eslint": "^7.3.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "prettier": "^2.0.5"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",
     "eslint": "^7.3.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
     "prettier": "^2.0.5"
   }
 }

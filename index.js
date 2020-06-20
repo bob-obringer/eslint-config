@@ -23,6 +23,12 @@ module.exports = {
 			version: 'detect',
 		},
 	},
+	plugins: [
+		'react',
+		'react-hooks',
+		'@typescript-eslint',
+		'prettier'
+	],
 	extends: [
 		'eslint-config-airbnb-typescript',
 		'plugin:react/recommended',
