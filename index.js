@@ -1,3 +1,13 @@
+const customRules = [
+	'./rules/best-practices',
+	'./rules/es6',
+	'./rules/imports',
+	'./rules/possible-errors',
+	'./rules/react',
+	'./rules/stylistic-issues',
+	'./rules/variables'
+].map(require.resolve);
+
 module.exports = {
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -15,19 +25,13 @@ module.exports = {
 	},
 	extends: [
 		'eslint-config-airbnb-typescript',
-		'plugin:eslint-plugin-react/recommended',
+		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
 		'prettier/@typescript-eslint',
-		'plugin:eslint-plugin-prettier/recommended',
-		'./rules/best-practices',
-		'./rules/es6',
-		'./rules/imports',
-		'./rules/possible-errors',
-		'./rules/react',
-		'./rules/stylistic-issues',
-		'./rules/variables'
-	].map(require.resolve),
+		'plugin:prettier/recommended',
+		...customRules
+	],
 	env: {
 		node: true,
 		browser: true,
