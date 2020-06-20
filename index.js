@@ -27,7 +27,7 @@ module.exports = {
 		'./rules/react',
 		'./rules/stylistic-issues',
 		'./rules/variables'
-	],
+	].map(require.resolve),
 	env: {
 		node: true,
 		browser: true,
