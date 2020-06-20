@@ -4,7 +4,9 @@ module.exports = {
         "import/exports-last": "error",
         "import/group-exports": "error",
         "import/first": "error",
-        "import/max-dependencies": ["error", 15],
+        "import/max-dependencies": ["error", {
+            "max": 15
+        }],
         "import/no-anonymous-default-export": "error",
         "import/no-deprecated": "error",
         "import/no-extraneous-dependencies": "off",
