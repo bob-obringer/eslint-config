@@ -21,10 +21,11 @@ module.exports = {
 		'prettier/@typescript-eslint',
 		'plugin:prettier/recommended',
 		'./rules/best-practices',
-		'./rules/complexity',
+		'./rules/es6',
 		'./rules/imports',
+		'./rules/possible-errors',
 		'./rules/react',
-		'./rules/style',
+		'./rules/stylistic-issues',
 		'./rules/variables'
 	],
 	env: {
