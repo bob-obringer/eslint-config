@@ -10,7 +10,7 @@ Include the following in your `package.json`
 ```json
 {
     "devDependencies": {
-        "@bobringer/eslint-config": "1.0.5",
+        "@bob-obringer/eslint-config": "0.1.0",
         "babel-eslint": "10.0.2",
         "eslint": "5.16.0"
     }
