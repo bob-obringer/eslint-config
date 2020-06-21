@@ -12,6 +12,7 @@ module.exports = {
         "import/no-extraneous-dependencies": "off",
         "import/no-namespace": "error",
         "import/prefer-default-export": "off",
+        'import/no-cycle': ['error', { maxDepth: 1 }],
         "import/no-unassigned-import": [
             "error",
             {allow: ["**/*.css", "**/*.scss"]}
