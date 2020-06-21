@@ -1,4 +1,5 @@
 const customRules = [
+	'./rules/react',
 	'./rules/best-practices',
 	'./rules/es6',
 	'./rules/imports',
@@ -12,13 +13,23 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 2020,
 		sourceType: 'module',
-		project: './tsconfig.json',
+		ecmaFeatures: {
+			jsx: true,
+		}
+	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
 	},
 	plugins: [
 		'@typescript-eslint',
-		'prettier'
+		'prettier',
+		'react',
+		'react-hooks'
 	],
 	extends: [
+		'plugin:react/recommended',
 		'eslint-config-airbnb-typescript',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -30,8 +41,5 @@ module.exports = {
 		node: true,
 		browser: true,
 		jest: true,
-	},
-	rules: {
-		'import/prefer-default-export': 'off',
 	},
 };

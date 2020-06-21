@@ -1,26 +1,8 @@
 module.exports = {
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        }
-    },
-    settings: {
-        react: {
-            version: 'detect',
-        },
-    },
-    plugins: [
-        'react',
-        'react-hooks'
-    ],
-    extends: [
-        'plugin:react/recommended',
-    ],
     rules: {
         "react/boolean-prop-naming": ["error", { "rule": "^(is|has|should)[A-Z]([A-Za-z0-9]?)+" }],
         "react/jsx-filename-extension": ["error", { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
         "react/jsx-handler-names": "error",
-        "indent": ["error", 4, {"ignoredNodes": ["JSXElement"]}],
         "react/jsx-indent": ["off"],
         "react/jsx-indent-props": ["off"],
         "react/jsx-key": "error",
