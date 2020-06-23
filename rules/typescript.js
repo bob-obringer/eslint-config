@@ -1,3 +1,5 @@
 module.exports = {
-    '@typescript-eslint/ban-ts-comment': 'off',
+    rules: {
+        '@typescript-eslint/ban-ts-comment': 'off'
+    }
 }
