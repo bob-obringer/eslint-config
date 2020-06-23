@@ -38,7 +38,7 @@ module.exports = {
 		'eslint-config-airbnb-typescript',
 		'plugin:testing-library/recommended',
 		'plugin:testing-library/react',
-		'plugin:jext-dom/react',
+		'plugin:jest-dom/react',
 		'prettier/@typescript-eslint',
 		'plugin:prettier/recommended',
 		...customRules
