@@ -1,6 +1,6 @@
 {
   "name": "@bob-obringer/eslint-config",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "ESLint Config for React with TypeScript and Prettier with opinionated rules",
   "main": "index.js",
   "repository": "http://github.com/bob-obringer/eslint-config.git",
