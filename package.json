@@ -1,6 +1,6 @@
 {
   "name": "@bob-obringer/eslint-config",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "ESLint Config for React with TypeScript and Prettier with opinionated rules",
   "main": "index.js",
   "repository": "http://github.com/bob-obringer/eslint-config.git",
@@ -27,10 +27,12 @@
     "eslint-config-airbnb-typescript": "^8.0.2",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest-dom": "^3.0.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-testing-library": "^3.3.1",
     "prettier": "^2.0.5"
   }
 }

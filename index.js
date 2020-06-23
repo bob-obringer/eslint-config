@@ -1,4 +1,5 @@
 const customRules = [
+	'./rules/typescript',
 	'./rules/react',
 	'./rules/best-practices',
 	'./rules/es6',
@@ -26,13 +27,18 @@ module.exports = {
 		'@typescript-eslint',
 		'prettier',
 		'react',
-		'react-hooks'
+		'react-hooks',
+		'testing-library',
+		'jest-dom'
 	],
 	extends: [
-		'plugin:react/recommended',
-		'eslint-config-airbnb-typescript',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+		'plugin:react/recommended',
+		'eslint-config-airbnb-typescript',
+		'plugin:testing-library/recommended',
+		'plugin:testing-library/react',
+		'plugin:jext-dom/react',
 		'prettier/@typescript-eslint',
 		'plugin:prettier/recommended',
 		...customRules

@@ -9,11 +9,26 @@ module.exports = {
         "react/jsx-max-depth": ["error", {
             "max": 2
         }],
-        "react/jsx-no-literals": "error",
+        'react/jsx-no-literals': ['error', { ignoreProps: true }],
         "react/no-unsafe": "error",
         "react/prop-types": "error",
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "react/react-in-jsx-scope": "error"
+        "react/react-in-jsx-scope": "error",
+        'react/no-unescaped-entities': [
+            'error',
+            {
+                forbid: [
+                    {
+                        char: '>',
+                        alternatives: ['&gt;'],
+                    },
+                    {
+                        char: '}',
+                        alternatives: ['&#125;'],
+                    },
+                ],
+            },
+        ]
     },
 };
