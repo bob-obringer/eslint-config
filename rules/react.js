@@ -10,11 +10,11 @@ module.exports = {
             "max": 2
         }],
         'react/jsx-no-literals': ['error', { ignoreProps: true }],
-        "react/no-unsafe": "error",
-        "react/prop-types": "error",
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
-        "react/react-in-jsx-scope": "error",
+        "react/no-unsafe": ["error"],
+        "react/prop-types": ["off"],
+        "react/jsx-uses-react": ["error"],
+        "react/jsx-uses-vars": ["error"],
+        "react/react-in-jsx-scope": ["error"],
         'react/no-unescaped-entities': [
             'error',
             {
@@ -29,6 +29,6 @@ module.exports = {
                     },
                 ],
             },
-        ]
+        ],
     },
 };
